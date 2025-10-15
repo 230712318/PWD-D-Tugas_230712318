@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Reservation Hotel Room</title>
+
+    <style type="text/css">
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333333;
+      }
+
+      form {
+        background-color: white;
+        width: 60%;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #999999;
+      }
+
+      fieldset {
+        border: 1px solid #999999;
+        padding: 10px;
+        margin-bottom: 15px;
+      }
+
+      legend {
+        font-weight: bold;
+        color: #333333;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+        color: #333333;
+      }
+
+      input[type="text"], select {
+        width: 95%;
+        padding: 5px;
+        margin-top: 5px;
+        border: 1px solid #999999;
+      }
+
+      p {
+        font-weight: bold;
+        color: #333333;
+      }
+
+      #simpan {
+        display: block;
+        margin: 15px auto;
+        background-color: #4a90e2;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Reservation Hotel Room</h1>
+
+    <form action="" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Personal Data</legend>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="gender">Gender</label>
+        <input type="text" id="gender" name="gender" />
+
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" />
+
+        <label for="telp">Telp Number</label>
+        <input type="text" id="telp" name="telp" />
+      </fieldset>
+
+      <p>Reservation Room Form</p>
+      <label for="ReserveN">Reservation Name</label>
+      <input type="text" id="ReserveN" name="ReserveN" />
+
+      <label for="BookingD">Booking Date</label>
+      <input type="text" id="BookingD" name="BookingD" />
+
+      <label for="RoomT">Room Type</label>
+      <select name="Room Type" id="RoomT">
+        <option>Deluxe</option>
+        <option>Reguler</option>
+      </select>
+
+      <label for="BedT">Bed Type</label>
+      <select name="Bed Type" id="BedT">
+        <option>Single Bed</option>
+        <option>Double Bed</option>
+      </select>
+
+      <fieldset>
+        <legend>Payment</legend>
+        <label for="check">Check-in Date</label>
+        <input type="text" id="check" name="check" />
+
+        <label for="checkout">Checkout Date</label>
+        <input type="text" id="checkout" name="checkout" />
+
+        <label for="payment">Payment Method</label>
+        <select name="payment" id="payment">
+          <option>Cash</option>
+          <option>Qris</option>
+          <option>Debit</option>
+        </select>
+      </fieldset>
+
+      <input type="submit" id="simpan" name="simpan" value="Simpan" />
+    </form>
+  </body>
+</html>
